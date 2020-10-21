@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+/* import { Provider } from 'react-redux';
+import reducer from './store/reducers';
+const store = createStore(reducer);
+import {createStore } from 'redux'; */
 
+import { MyData } from './axios-http';
+import MyContext from './Context';
 ReactDOM.render(
-  <React.StrictMode>
+  // <Provider store={store}></Provider>,
+  <MyContext.Provider value={{MyData}}>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>
+  </MyContext.Provider>,
   document.getElementById('root')
 );
 

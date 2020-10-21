@@ -1,0 +1,36 @@
+.Card {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    /* d-flex flex-row align-items-center */
+}
+
+.CardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* d-flex flex-column align-items-start */
+}
+
+.TextMuted {
+    color: #6c757d!important;
+    margin: 0!important;
+    font-size: x-small;
+    font-weight: 600;
+}
+
+.Details{
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 550px) {
+    .Card {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .CardBody {
+        align-items: center;
+    }
+}

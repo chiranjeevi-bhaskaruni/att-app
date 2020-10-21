@@ -1,0 +1,39 @@
+.Progress {
+    border-radius: 2px;
+    display: flex;
+    padding: 0px 50px 10px 3px;
+    margin-right: 2px;
+}
+
+.Progress svg {
+    margin-left: 0;
+    color: #80808080;
+}
+
+.ordered {
+    border-bottom: 4px solid #ffc107c4;
+}
+.progress {
+    border-bottom: 4px solid #3cce18a6;
+}
+.delivered {
+    border-bottom: 4px solid #0000ffa8;
+}
+
+.StatusBar {
+    display: flex;
+    margin-left: 1rem !important;
+}
+
+@media(max-width: 550px) {
+    .Card {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .StatusBar {
+        justify-content: center !important;
+    }
+    .Progress {
+        padding: 0px 25px 10px 25px;
+    }
+}
