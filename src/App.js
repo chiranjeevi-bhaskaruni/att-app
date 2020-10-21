@@ -11,12 +11,12 @@ function App() {
   return (
     <div className="App">
   {/* Hamburger with popup */}
-       <Toolbar />
+       {/* <Toolbar />
       <Switch>
         <Route path="/orderStatus">
         <OrderStatus /> 
         </Route>
-      </Switch> 
+       </Switch>  */}
 
       <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
         <Navbar.Brand>
